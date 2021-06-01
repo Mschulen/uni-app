@@ -1,0 +1,49 @@
+@import "materialize-css/dist/css/materialize";
+
+body {
+  background-color: rgb(17, 17, 17);
+  color: white !important;
+}
+
+#logo {
+  font-size: 30px;
+  margin-left: 30px;
+}
+
+#purple-light {
+  background-color: rgb(100, 34, 206) !important;
+}
+
+#purple-dark {
+  background-color: rgb(141, 71, 255) !important;
+}
+
+.text-white {
+  color: white !important;
+}
+
+.text-black {
+  color: black;
+}
+
+#courses-index {
+  font-size: 20px !important;
+}
+
+/*
+shit for the footer to work
+*/
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+/*
+end footer shit
+*/

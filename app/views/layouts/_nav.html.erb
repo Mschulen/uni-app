@@ -1,0 +1,26 @@
+<div class="container">
+  <nav class="nav-extended" id="purple-light">
+    <div class="nav-wrapper">
+      <%= link_to 'Uni-app', root_path, method: :get, id: "logo" %>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#">Sass</a></li>
+        <li><a href="#">Components</a></li>
+        <li><a href="#">JavaScript</a></li>
+      </ul>
+    </div>
+    <div class="nav-content" id="purple-dark">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><%= link_to 'Courses', '#' %></li>
+        <li class="tab"><%= link_to 'Enrolment', '#' %></li>
+        <li class="tab"><%= link_to 'Account', '#' %></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="#">Sass</a></li>
+    <li><a href="#">Components</a></li>
+    <li><a href="#">JavaScript</a></li>
+  </ul>
+</div>
