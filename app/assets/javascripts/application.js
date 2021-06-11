@@ -8,3 +8,7 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require_tree .
+
+$(document).on('turbolinks:load', function() {
+  $('.dropdown-trigger').dropdown();
+})

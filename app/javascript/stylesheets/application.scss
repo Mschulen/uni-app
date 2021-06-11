@@ -1,7 +1,7 @@
 @import "materialize-css/dist/css/materialize";
 
 body {
-  background-color: rgb(17, 17, 17);
+  background-color: rgb(77, 77, 77);
   color: white !important;
 }
 
@@ -47,3 +47,41 @@ main {
 /*
 end footer shit
 */
+
+#course-name {
+  font-size: 20px;
+  margin-top: -2px;
+  font-weight: 400;
+}
+
+.card {
+  background-color: rgb(81, 19, 97) !important;
+}
+
+#funi-text {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+#alert-card {
+  background-color: rgb(245, 14, 45) !important;
+  margin-top: 30px;
+}
+
+#alert-title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#error-list {
+  font-size: medium;
+}
+
+#register-form {
+  margin-bottom: 50px;
+}
+
+#student-card{
+  background-color: blueviolet;
+  margin-top: 100px;
+}

@@ -17,6 +17,18 @@
     <%= render 'layouts/nav' %>
   </header>
 
+
+  <%
+=begin%>
+ <% if @student.errors.any? %>
+    <% errors.each do |error| %>
+      <h5><%= error %><h5>
+    <% end %>
+  <% end %> 
+<%
+=end%>
+
+
   <main>
     <div class="container">
       <%= yield %>

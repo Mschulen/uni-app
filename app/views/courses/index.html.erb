@@ -1,9 +1,20 @@
 <h2 class="center-align">This is the index page for Courses :)</h2>
 
-<p id="courses-index">Code: CS111<br>
-Name: Intro to Computer Science<br>
-Description: A through introduction to Computer Science<br> 
-<br>
-Code: CS112<br>
-Name: Intro to Computer Science<br>
-Description: A through introduction to Computer Science</p>
+<% @courses.each do |course| %>
+
+<div class="row">
+  <div class="col s6">
+    <div class="card darken-1">
+      <div class="card-content white-text">
+        <span class="card-title"><%= course.short_name %></span>
+        <h5 id="course-name"><%= course.name %></h3>
+        <p><%= course.description %></p>
+      </div>
+      <div class="card-action">
+        <a href="#">View</a>
+        <a href="#">Enroll</a>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>

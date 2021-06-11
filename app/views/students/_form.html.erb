@@ -1,0 +1,15 @@
+<% if @student.errors.any? %>
+  <%= render 'layouts/errors', ph: @student %>
+<% end %>
+
+
+<div class="container input-field" id="register-form">
+  <%= form_with model: @student do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, placeholder: "Enter your name here" %>
+
+  <%= f.label :email %>
+  <%= f.email_field :email, placeholder: "Enter your email here :)", size: "60x10" %>
+  <%= f.submit "Submit :D" %>
+  <% end %>
+</div>
